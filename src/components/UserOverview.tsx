@@ -13,9 +13,10 @@ const users = {
 };
 
 const UserOverview: React.FC = () => {
-  // const user = useSelector((state: RootState) => state.user.data);
+  const user = useSelector((state: RootState) => state.user.data);
+  // const dispatch = useDispatch();
 
-  // if (!users) return <div>Loading...</div>;
+  if (!users) return <div>Loading...</div>;
 
   return (
     <div className="p-4 bg-white shadow rounded">
